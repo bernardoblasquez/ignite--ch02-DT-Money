@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+export function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>hello world</h1>
     </div>
   );
 }
 
-export default App;
+// export function traz algumas vantagens
+/*
+  Por que utilizar as exportações com export, ao invés de export default?
+  - no export default, quem define o nome do componente não é quem está exportando
+  e sim quem está importando.
+  - quem exporta somente com 'export' obriga a quem importa a chamar exatamente o
+  nome da função importada. Ele pode até mudar o nome, mas terá que fazer isso 
+  de forma explícita
+
+  Existe uma outra vantagem
+  a importação automática do editor fica mais aprimorada também, já que todo 
+  componente terá obrigatoriamente um nome específico
+*/
